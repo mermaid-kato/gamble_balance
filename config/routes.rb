@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'balances/index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :questionnaires, only: :index
+  resources :balances, only: :index
 end
