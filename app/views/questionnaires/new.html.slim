@@ -1,0 +1,5 @@
+= form_with(model: @questionnaire, local: true) do |f|
+  = f.fields_for :questionnaire_options do |ff|
+    = render 'questionnaire_option_fields', f: ff
+  #links
+    = link_to_add_association '写真を追加',f, :questionnaire_options
