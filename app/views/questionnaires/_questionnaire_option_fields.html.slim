@@ -1,9 +1,5 @@
-.nested-fields.field
-  div スポット
-  .col-md-6
-    label.control-label スポット名
-    = f.collection_select :questionnaire_id, Questionnaire.all, :id, :title
-  .col-md-6
-    label.control-label スポットNo
+tr.nested-fields.field
+  td
     = f.text_field :title
-  = link_to_remove_association '削除', f, class: 'btn btn-danger'
+  td
+    = link_to_remove_association '削除', f, class: 'btn btn-danger'
