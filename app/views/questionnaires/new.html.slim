@@ -10,3 +10,7 @@
           = render 'questionnaire_option_fields', f: ff
     #links
       = link_to_add_association '追加',f, :questionnaire_options, data: {"association-insertion-node" => "tbody.questionnaire_options", "association-insertion-method" => "append"}
+
+<app></app>
+
+= javascript_pack_tag 'app'
