@@ -1,4 +1,4 @@
-= form_with(model: @questionnaire, local: true) do |f|
+= form_with(model: @questionnaire_form, url: questionnaires_path, local: true) do |f|
   .form-group
     table.table
       thead
@@ -9,8 +9,18 @@
         = f.fields_for :questionnaire_options do |ff|
           = render 'questionnaire_option_fields', f: ff
     #links
-      = link_to_add_association '追加',f, :questionnaire_options, data: {"association-insertion-node" => "tbody.questionnaire_options", "association-insertion-method" => "append"}
+      - binding.pry
+      = link_to_add_association '追加', f, :questionnaire_options, data: {"association-insertion-node" => "tbody.questionnaire_options", "association-insertion-method" => "append"}
 
-<app></app>
+<app>
+  <draggable>
+    .aaaa
+      = "aaa"
+    .bbbb
+      = "ccc"
+    .cccc
+      = "bbb"
+  </draggable>
+</app>
 
 = javascript_pack_tag 'app'
