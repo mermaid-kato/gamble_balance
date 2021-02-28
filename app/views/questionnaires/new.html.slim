@@ -8,9 +8,6 @@
       tbody.questionnaire_options
         = f.fields_for :questionnaire_options do |ff|
           = render 'questionnaire_option_fields', f: ff
-    #links
-      - binding.pry
-      = link_to_add_association '追加', f, :questionnaire_options, data: {"association-insertion-node" => "tbody.questionnaire_options", "association-insertion-method" => "append"}
 
 <app>
   <draggable>

@@ -5,9 +5,10 @@ class QuestionnairesController < ApplicationController
 
   def new
     @questionnaire = Questionnaire.first
-    # @questionnaire.questionnaire_options.build
 
     @questionnaire_form = QuestionnairesForm.new(@questionnaire)
+
+    @questionnaire_form.save!
   end
 
   private
