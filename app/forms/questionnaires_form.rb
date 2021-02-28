@@ -6,4 +6,7 @@ class QuestionnairesForm
   def initialize(model)
     @model = model
   end
+
+  def save!
+  end
 end

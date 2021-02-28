@@ -1,14 +1,99 @@
-.abc
-  .aaa
-    .card
-      .card-header
-        = "aaa"
-      .card-body
-        = "ccc"
-  .bbb
-  .ccc
-    .card
-      .card-header
-        = "aaa"
-      .card-body
-        = "ccc"
+.mt-4
+  .card
+    .operation.card-body
+      .operation-title.border-bottom.d-flex
+        .operation-title--results
+          = "実績便"
+        .operation-title--opeations
+          = "計画便"
+      / TODO: 以下の部分をhelperで共通化
+      .operation-article
+        .operation-left
+          .card.w-75
+            .card-header
+              = "あいうえお"
+            .card-body
+              = "これはダミーです。"
+        .operation-right
+          .card.w-75
+            .card-header
+              = "あいうえお"
+            .card-body
+              = "これはダミーです。"
+        .operation-time
+          = "8:30"
+
+
+.mt-5
+  .card
+    .operation.card-body
+      .operation-title.border-bottom.d-flex
+        .operation-title--results
+          = "実績便"
+        .operation-title--opeations
+          = "計画便"
+      / TODO: 以下の部分をhelperで共通化
+      .operation-article
+        .operation-left
+      .operation-article
+        .operation-right
+
+        / .operation-left
+        /   .card.w-75
+        /     .card-header
+        /       = "あいうえお"
+        /     .card-body
+        /       = "これはダミーです。"
+        / .operation-right
+        /   .card.w-75
+        /     .card-header
+        /       = "あいうえお"
+        /     .card-body
+        /       = "これはダミーです。"
+        / .operation-time
+        /   = "8:30"
+
+.mt-5
+section#conference-timeline
+  .conference-center-line
+  .conference-timeline-content
+    .timeline-article
+      .content-left
+        p
+          | When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it!
+          span.article-number 01
+      .content-right
+        p
+          | When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is.
+          span.article-number 02
+      .meta-date
+        span.date 18
+        span.month APR
+    .timeline-article
+      .content-left
+        p
+          | When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it!
+          span.article-number 03
+      .content-right
+        p
+          | When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it!
+          span.article-number 04
+      .meta-date
+        span.date 19
+        span.month APR
+    /! // Article
+    /! Article
+    .timeline-article
+      .content-left
+        p
+          | When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and.
+          span.article-number 05
+      .content-right
+        p
+          | When I orbited the Earth in a spaceship, I saw for the first time how beautiful our.
+          span.article-number 06
+      .meta-date
+        span.date 20
+        span.month APR
+    /! // Article
+/! // Vertical Timeline

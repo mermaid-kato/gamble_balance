@@ -4,6 +4,5 @@ class BalancesController < ApplicationController
 
     @operation_plans = calc_operation.molding
     @operation_results = calc_operation.molding
-    binding.pry
   end
 end
